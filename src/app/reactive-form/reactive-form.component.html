@@ -1,19 +1,24 @@
 <h2>Sign In Page :  <i> <u> Using Reactive/Dyanamic Forms </u></i> </h2>
 <div class="container">
-  <form >
+  <form [formGroup]="reactiveForm" (submit)="submitMyForm()">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="emailControl" #abc>
+      <span *ngIf="reactiveForm.get('emailControl')?.hasError(required)">Enter Email with 15 min Characters</span>
+      <span *ngIf="!(this.reactiveForm.get('emailControl')?.valid) && (this.reactiveForm.get('emailControl')?.touched)">* Enter Email with 15 min Characters.</span>
       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="passwordControl" >
+      <span *ngIf="!(this.reactiveForm.get('passwordControl')?.valid) && (this.reactiveForm.get('passwordControl')?.touched)"> Enter Password</span>
     </div>
     <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="checkBoxControl">
       <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
+
+<h1>{{changedDataValue}}</h1>

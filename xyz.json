@@ -1,0 +1,78 @@
+{
+  "myPercentage": {
+    "10th": 79.45,
+    "12th": 60.77,
+    "BE Mech": 73.27
+  },
+  "myNum": [
+    {
+      "Hi ": "MMMMMMMM",
+      "id": 3
+    },
+    {
+      "Hi": "Rammmmmmmmmmmmm",
+      "Hello": "Angular",
+      "id": 4
+    },
+    {
+      "Hi": "Ajay Shinde",
+      "id": 5,
+      "Hello": "Sandesh and SiddheshWar"
+    },
+    {
+      "id": "1",
+      "Hi": "Aniket"
+    }
+  ],
+  "myInfo": [
+    {
+      "id": 1,
+      "name": "Gomu",
+      "marks": 38
+    },
+    {
+      "id": 2,
+      "name": "Gomu"
+    },
+    {
+      "id": 3,
+      "name": "Any Name "
+    },
+    {
+      "id": 4,
+      "name": "SSSName "
+    }
+  ],
+  "myAddress": [
+    {
+      "tal": "pandharpur",
+      "dist": "Solapur"
+    },
+    {
+      "tal": "Kolhapur",
+      "dist": "Pune"
+    },
+    {
+      "tal": "Sangli",
+      "dist": "Mumbai"
+    },
+    {
+      "tal": "Miraj",
+      "dist": "Delhi"
+    }
+  ],
+  "myPin": [
+    {
+      "pin": 413302
+    },
+    {
+      "pin": 101291
+    },
+    {
+      "pin": 411232
+    },
+    {
+      "pin": 431136
+    }
+  ]
+}

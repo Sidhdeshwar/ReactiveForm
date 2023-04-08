@@ -22,3 +22,36 @@
 </div>
 
 <h1>{{changedDataValue}}</h1>
+<!--
+<div formArrayName="items">
+  <div *ngFor="let obj of reactiveForm.controls.items['controls']; let i=index" formGroupName="i">
+    <input [formControlName]="itemId" id="task{{i}}">
+    <input [formControlName]="itemName" id="task{{i}}">
+    <input [formControlName]="itemDec" id="task{{i}}">
+
+  </div>
+</div> -->
+<!--
+<div *ngFor="let obj of reactiveForm.value.items2">
+  <div>{{obj.itemId}}  &nbsp;&nbsp; {{obj.itemName}} &nbsp;&nbsp; {{obj.itemDec}}</div>
+</div> -->
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Item Name</th>
+      <th>Item Dec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let obj of reactiveForm.value.items2" >
+      <td scope="row">{{obj.itemId}}</td>
+    <td> {{obj.itemName}} </td>
+    <td>{{obj.itemDec}}</td>
+    <td><button type="submit" class="btn btn-danger" (click)="removeItem(obj.itemId)">Add Row</button></td>
+    </tr>
+  </tbody>
+</table>
+<button type="submit" class="btn btn-primary" (click)="addRow()">Add Row</button>

@@ -1,0 +1,23 @@
+<h1>json-server Component works!</h1>
+
+<table class="table table-bordered">
+ <tr>
+   <th>ID</th>
+   <th>Name</th>
+   <th>Marks</th>
+   <th>Tal</th>
+   <th>Dist</th>
+   <th>Pin Code</th>
+ </tr>
+ <tr *ngFor="let obj of studentArray;let i=index">
+  <td>{{i+1}}</td>
+  <td>{{obj.name}}</td>
+  <td>{{obj.marks}}</td>
+ </tr>
+</table>
+<button (click)="update()">Update</button>
+<button (click)="POST_Method()">POST Data</button>
+<div *ngFor="let obj of numArray">
+  <b>{{obj.Hi}} <br></b>
+
+</div>

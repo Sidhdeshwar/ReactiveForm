@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReactiveFormComponent } from './reactive-form.component';
+import { JsonServerComponent } from './json-server.component';
 
-describe('ReactiveFormComponent', () => {
-  let component: ReactiveFormComponent;
-  let fixture: ComponentFixture<ReactiveFormComponent>;
+describe('JsonServerComponent', () => {
+  let component: JsonServerComponent;
+  let fixture: ComponentFixture<JsonServerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ReactiveFormComponent ]
+      declarations: [ JsonServerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ReactiveFormComponent);
+    fixture = TestBed.createComponent(JsonServerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

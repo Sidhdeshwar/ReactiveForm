@@ -1,4 +1,11 @@
+<a href="http://localhost:4200">Refresh</a>
 <h5> Component : <u><i>signin</i></u> [ 1)Template Driven Forms]  </h5>
 <h5> Component : <u><i>reactive-form</i></u> [ 2)Reactive / Dyanamic  Forms]  </h5>
 <button class="btn btn-primary">Button</button>
+
+<button class="btn btn-primary" routerLink="jsonServer">JSON SERVER</button><br>
+<button class="btn btn-success mt-3" routerLink="intercepter">Go-to-Interceptor</button>
+
+InputTag <input type="text" [(ngModel)]="myInput">
+<h1>{{myInput}}</h1>
 <router-outlet></router-outlet>
